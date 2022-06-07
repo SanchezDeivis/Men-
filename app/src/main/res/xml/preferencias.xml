@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <PreferenceCategory android:title="PERSONALIZAR">
+
+        <PreferenceScreen
+            android:title="Cambiar Tema"
+            android:icon="@mipmap/ic_launcher"
+            android:summary="Personaliza los colores y el diseño de la aplicación">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:targetPackage="com.example.mi_menu"
+                android:targetClass=".MainActivity"/>
+
+        </PreferenceScreen>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

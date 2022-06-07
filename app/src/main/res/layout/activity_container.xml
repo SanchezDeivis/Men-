@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.menu.container.ContainerActivity">
+
+    <FrameLayout
+        android:id="@+id/fl_activity_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white" />
+    <!--android:layout_above="@+id/activity_container_patient_inc_bnv"-->
+    <!--<include
+        android:id="@+id/activity_container_patient_inc_bnv"
+        layout="@layout/bottom_nav_view_patient" />-->
+
+</RelativeLayout>

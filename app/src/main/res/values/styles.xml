@@ -1,0 +1,102 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="editTextColor">@array/blue_greys</item>
+        <!--<item name="preferenceTheme">@style/PreferenceThemeOverlay</item>-->
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Base application theme. -->
+    <style name="AppTheme2" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/md_red_500</item>
+        <item name="colorPrimaryDark">@color/md_red_700</item>
+        <item name="colorAccent">@color/md_blue_A200</item>
+        <item name="colorControlHighlight">@color/md_black_1000_25</item>​
+        <item name="colorControlNormal">@color/md_black_1000_50</item>
+        <item name="colorSwitchThumbNormal">@color/md_grey_200</item>
+        <item name="android:colorForeground">@color/md_black_1000_75</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeBackground">@color/md_red_500</item>​
+    </style>
+
+    <!--  ///-->
+    <style name="AppTheme3" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/md_blue_500</item>
+        <item name="colorPrimaryDark">@color/md_blue_700</item>
+        <item name="colorAccent">@color/md_orange_A200</item>
+        <item name="colorControlHighlight">@color/md_orange_500_25</item>​
+        <item name="colorControlNormal">@color/md_black_1000_50</item>
+        <item name="colorSwitchThumbNormal">@color/md_grey_200</item>
+        <item name="android:colorForeground">@color/md_black_1000_75</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeBackground">@color/md_indigo_500</item>​
+    </style>
+
+    <style name="AppTheme4" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/md_indigo_500</item>
+        <item name="colorPrimaryDark">@color/md_indigo_700</item>
+        <item name="colorAccent">@color/md_pink_A200</item>
+        <item name="colorControlHighlight">@color/md_pink_500_25</item>​
+        <item name="colorControlNormal">@color/md_black_1000_50</item>
+        <item name="colorSwitchThumbNormal">@color/md_grey_200</item>
+        <item name="android:colorForeground">@color/md_black_1000_75</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeBackground">@color/md_indigo_500</item>​
+    </style>
+
+
+    <style name="AppTheme5" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/md_yellow_500</item>
+        <item name="colorPrimaryDark">@color/md_yellow_700</item>
+        <item name="colorAccent">@color/md_purple_A200</item>
+        <item name="colorControlHighlight">@color/md_purple_500_25</item>​
+        <item name="colorControlNormal">@color/md_black_1000_50</item>
+        <item name="colorSwitchThumbNormal">@color/md_grey_200</item>
+        <item name="android:colorForeground">@color/md_black_1000_75</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeBackground">@color/md_indigo_500</item>​
+    </style>
+
+    <style name="AppTheme6" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/md_green_500</item>
+        <item name="colorPrimaryDark">@color/md_green_700</item>
+        <item name="colorAccent">@color/md_amber_A200</item>
+        <item name="colorControlHighlight">@color/md_amber_500_25</item>​
+        <item name="colorControlNormal">@color/md_black_1000_50</item>
+        <item name="colorSwitchThumbNormal">@color/md_grey_200</item>
+        <item name="android:colorForeground">@color/md_black_1000_75</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeBackground">@color/md_indigo_500</item>​
+    </style>
+
+    <style name="TextInputLAyoutAppearance" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+        <!-- parent="TextAppearance.AppCompat"-->
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/colorGris</item>
+        <item name="android:textSize">15sp</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/colorRojo</item>
+        <item name="colorControlNormal">@color/colorGris</item>
+        <item name="colorControlActivated">@color/colorGris</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:password">false</item>
+    </style>
+
+</resources>

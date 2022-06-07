@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/fly_add_category_main"
+    android:layout_height="match_parent"
+    android:background="@color/md_white_1000"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    tools:context=".ui.menu.add_products.add_category.AddCategory">
+
+    <RelativeLayout
+        android:id="@+id/rly_body_p"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rly_header"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="?attr/colorPrimary"
+            android:paddingLeft="24dp"
+            android:paddingTop="18dp"
+            android:paddingRight="24dp"
+            android:paddingBottom="18dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/go_back"
+                app:srcCompat="@drawable/ic_arrow_back" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="2dp"
+                android:layout_toEndOf="@+id/btn_back"
+                android:layout_toRightOf="@+id/btn_back"
+                android:text="Agregar categoria"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/rly_header">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="40dp"
+                android:background="@color/white"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:orientation="vertical"
+                card_view:cardBackgroundColor="@color/white"
+                card_view:cardCornerRadius="20dp"
+                card_view:cardElevation="5dp"
+                card_view:cardPreventCornerOverlap="false"
+                card_view:contentPadding="0dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="350dp"
+                        android:layout_gravity="center_horizontal"
+                        android:foregroundGravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_image_category"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/avatar_menu"
+                            android:visibility="visible" />
+                        <!--android:alpha="0.4"-->
+                        <ImageView
+                            android:id="@+id/iv_add_image"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginTop="40dp"
+                            android:layout_marginEnd="40dp"
+                            android:layout_marginBottom="20dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_add_img"
+                            android:visibility="visible"
+                            app:tint="?attr/colorPrimary" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--Imput email-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/title_et_name_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:textSize="15sp"
+                    android:theme="@style/TextInputLAyoutAppearance">
+
+                    <EditText
+                        android:id="@+id/et_name_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="46dp"
+                        android:drawablePadding="5dp"
+                        android:drawableTint="@color/colorGris"
+                        android:fontFamily="sans-serif-light"
+                        android:hint="Nombre de categoria del menu"
+                        android:inputType="text"
+                        android:textColor="@color/colorTextPrimary"
+                        android:textColorHint="@color/colorGris"
+                        android:textSize="20sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Barra de progreso-->
+        <androidx.core.widget.ContentLoadingProgressBar
+            android:id="@+id/pb"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            android:visibility="invisible" />
+
+
+        <Button
+            android:id="@+id/btn_add_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/shape_round_button"
+            android:drawableStart="@drawable/ic_save"
+            android:drawablePadding="8dp"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:text="Guardar categoria"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:backgroundTint="?attr/colorPrimary"
+            app:iconTint="@color/white"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    </RelativeLayout>
+
+</FrameLayout>
